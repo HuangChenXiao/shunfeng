@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46C33830-F0BD-4B68-87F4-48DFA13F165A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shunfeng.api</RootNamespace>
+    <AssemblyName>shunfeng.api</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="COMAdapterForOldAPI">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\COMAdapterForOldAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetAssemblyProtocol">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\DotNetAssemblyProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="IESBSDLMsgType">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\IESBSDLMsgType.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSXML2">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.U8Login, Version=1.14.0.0, Culture=neutral, PublicKeyToken=79a4e7ad54eeabca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\Interop.U8Login.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMAdapter">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\MOMAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMEngine">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\MOMEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMEngineDAC">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\MOMEngineDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="MOMProtocol">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\MOMProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="MSCOMProtocol">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\MSCOMProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFIDA.U8.MomServiceCommon">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\UFIDA.U8.MomServiceCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8APIFramework">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\UFIDA.U8.U8APIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U8.U8MOMAPIFramework">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\UFIDA.U8.U8MOMAPIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.AIF.MOM.Common">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\UFSoft.AIF.MOM.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.AIF.MOM.Common.MessageObjectModel">
+      <HintPath>..\..\JXJS\trunk\UFDataImportDll\用友引用dll\UFSoft.AIF.MOM.Common.MessageObjectModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\U8_DispatchList_Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\U8_fAp_Voucah_Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\U8_mom_order_Add.cs" />
+    <Compile Include="API\U8_RdRecord01_Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\U8_RdRecord08_Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\U8_RdRecord09_Add.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\U8_rdrecord10_Add.cs" />
+    <Compile Include="API\U8_rdrecord11_Add.cs" />
+    <Compile Include="API\U8_sAp_Voucah_Add.cs" />
+    <Compile Include="API\U8_TransVouch_Add.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\shunfeng.model\shunfeng.model.csproj">
+      <Project>{62D842AA-2754-4D9F-9BF6-88CF75099B05}</Project>
+      <Name>shunfeng.model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

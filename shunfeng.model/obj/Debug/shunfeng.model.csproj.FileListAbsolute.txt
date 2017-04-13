@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\shunfeng\shunfeng.model\bin\Debug\shunfeng.model.dll.config
+C:\Users\Administrator\Desktop\shunfeng\shunfeng.model\bin\Debug\shunfeng.model.dll
+C:\Users\Administrator\Desktop\shunfeng\shunfeng.model\bin\Debug\shunfeng.model.pdb
+C:\Users\Administrator\Desktop\shunfeng\shunfeng.model\obj\Debug\shunfeng.model.dll
+C:\Users\Administrator\Desktop\shunfeng\shunfeng.model\obj\Debug\shunfeng.model.pdb
